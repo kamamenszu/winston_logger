@@ -17,13 +17,19 @@ Then
 `npm start`
 
 ## Setup
-Once the dependencies are installed, You will then be able to access it at default localhost `https://localhost:8080/`, apiUrl is`https://localhost:3000/`. If Your default localhost is diffrent You can change it at file `conf/environment/local.json` on line `19`.
+Once the dependencies are installed, You will then be able to access it at default:
+* 1 localhost `https://localhost:8080/`,
+* 2 localhost apiUrl`https://localhost:3000/`. 
+
+If Your default localhost apiUrl is diffrent You can change it at file:
+* 1 `./protractor.common.conf.js` on line `52`
+* 2 `./conf/environment/local.json` on line `19`
 
 ## Executing tests on Linux and Chrome
 You can choose 3 different ways to run tests, depends if You want to run all or only particular scenario:
 * 1 - to start all tests execution open terminal in main folder and use following command
 `npm run test`
-* 2 - to start all tests from workflow (one module) open in main folder and use following command
+* 2 - to start only tests for workflow (one module) open in main folder and use following command
 `npm run basicWorkflow`
 * 3 - to start one scenerio test from 1 feature open terminal in main folder and use following command
 `node ./node_modules/protractor/bin/protractor ./protractor.sequential.conf.js --baseUrl='https://daas.resolvertest.com/' --capabilities.chromeOptions.prefs.download.default_directory=`pwd`/tmp --specs=e2e/features/dashboard/1-log-in.feature:8`
