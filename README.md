@@ -3,7 +3,7 @@
 
 ## Table of contents
 * [Installation](#installation)
-* [Executing_tests](#executing tests on Linux and Chrome)
+* [Executing](#executing tests on Linux and Chrome)
 * [Setup](#setup)
 * [Technologies](#technologies)
 * [Features](#features)
