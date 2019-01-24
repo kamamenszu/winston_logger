@@ -18,12 +18,12 @@ Then
 
 ## Setup
 Once the dependencies are installed, You will then be able to access it at default:
-* 1 localhost `https://localhost:8080/`,
-* 2 localhost apiUrl`https://localhost:3000/`. 
+* localhost `https://localhost:8080/`,
+* localhost apiUrl`https://localhost:3000/`. 
 
 If Your default localhost apiUrl is diffrent You can change it at file:
-* 1 `./protractor.common.conf.js` on line `52`
-* 2 `./conf/environment/local.json` on line `19`
+* `./protractor.common.conf.js` on line `52`
+* `./conf/environment/local.json` on line `19`
 
 ## Executing tests on Linux and Chrome
 You can choose 3 different ways to run tests, depends if You want to run all or only particular scenario:
