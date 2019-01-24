@@ -2,6 +2,6 @@
 costam
 
 ```
-"createsf": "npm run pretest && node node_modules/protractor/bin/protractor protractor.sequential.conf.js --cucumberOpts.tags=\"@createsf\" --baseUrl=\"https://daas.resolvertest.com/\"",
+"createsf": "PROTRACTOR_PARAMS_COMMON="--capabilities.chromeOptions.prefs.download.default_directory=`pwd`/tmp --baseUrl=https://daas.resolvertest.com/"",
 ```
 costam
