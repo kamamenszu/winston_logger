@@ -18,13 +18,19 @@ Then
 `npm start`
 
 ## Setup
-Once the dependencies are installed, You will then be able to access it at default:
+Once the dependencies are installed, You will then be able to access it by default:
+on staging environment:
+* baseUrl `https://daas.resolvertest.com/`
+* apiUrl `https://api-daas.resolvertest.com/`
+on local environment:
 * localhost `https://localhost:8080/`,
 * localhost apiUrl`https://localhost:3000/`. 
 
-If Your default localhost apiUrl is diffrent You can change it at file:
-* `./protractor.common.conf.js` on line `52`
-* `./conf/environment/local.json` on line `19`
+If Your default localhost apiUrl is diffrent You can change it directly from console using command :
+* `export $baseUrl="..."` e.g `export $baseUrl="https://localhost:8080/"`
+* `export $apiUrl="..."` e.g `export $apiUrl="https://localhost:3000/"`
+NOTICE: Please look at this film, which demonstrate how to change localhost apiUrl directly from console:
+![localhost](/home/testarmy/projekty/daas-testing-master/film.readme/localhost.gif)
 
 ## Executing
 You can choose 3 different ways to run tests, depends if You want to run all or only particular scenario:
