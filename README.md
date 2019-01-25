@@ -3,7 +3,7 @@
 
 ## Table of contents
 * [Installation](#installation)
-* [Executing tests on Linux and Chrome](#executing tests on Linux and Chrome)
+* [Executing](#executing)
 * [Setup](#setup)
 * [Features](#features)
 * [Technologies](#technologies)
@@ -25,7 +25,7 @@ If Your default localhost apiUrl is diffrent You can change it at file:
 * `./protractor.common.conf.js` on line `52`
 * `./conf/environment/local.json` on line `19`
 
-## Executing tests on Linux and Chrome
+## Executing
 You can choose 3 different ways to run tests, depends if You want to run all or only particular scenario:
 * 1 - to start all tests execution open terminal in main folder and use following command:
 `npm run test`
