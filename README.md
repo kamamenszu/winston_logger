@@ -19,16 +19,14 @@ Then
 
 ## Setup
 Once the dependencies are installed, You will then be able to access it by default:
+
 on staging environment:
 * baseUrl `https://daas.resolvertest.com/`
 * apiUrl `https://api-daas.resolvertest.com/`
-on local environment:
-* localhost `https://localhost:8080/`,
-* localhost apiUrl`https://localhost:3000/`. 
 
-If Your default localhost apiUrl is diffrent You can change it directly from console using command :
-* `export $baseUrl="..."` e.g `export $baseUrl="https://localhost:8080/"`
-* `export $apiUrl="..."` e.g `export $apiUrl="https://localhost:3000/"`
+To change environment on Your localhost apiUrl use command directly from console:
+* `export $baseUrl="https://localhost:8080/"`
+* `export $apiUrl="https://localhost:3000/"`
 NOTICE: Please look at this film, which demonstrate how to change localhost apiUrl directly from console:
 ![localhost](/home/testarmy/projekty/daas-testing-master/film.readme/localhost.gif)
 
