@@ -35,7 +35,7 @@ You can choose 3 different ways to run tests, depends if You want to run all or 
 `node ./node_modules/protractor/bin/protractor ./protractor.sequential.conf.js --baseUrl='https://daas.resolvertest.com/' --capabilities.chromeOptions.prefs.download.default_directory=`pwd`/tmp --specs=e2e/features/dashboard/1-log-in.feature:8`
 
 NOTICE: If You want to check diffrent scenerio, change `--specs=e2e/features/../..:..`.
-You should pick module You want to check, e.g. `dashboard or complaint or workflow`, then write name of feature file, e.g `1-account-registration.feature or 5-investigate-status.feature` and write line number which Scenerio is in file, e.g `14` or `8`.
+First You should pick module You want to check, e.g. `dashboard` or `complaint` or `workflow`, then write name of feature file, e.g `1-account-registration.feature` or `5-investigate-status.feature` and write line number which Scenerio is in file, e.g `14` or `8`. New path file to check diffrent scenerio can be `--specs=e2e/features/miscellaneous/1-account-registration.feature:14`.
 
 Look at this short film in gif format, which demonstare how to run only one scenerio:
 ![film](/home/testarmy/projekty/daas-testing-master/film.readme/1-log-in.feature:8.gif)
