@@ -6,6 +6,7 @@
 * [Executing](#executing)
 * [Setup](#setup)
 * [Features](#features)
+* [CircleCI](#circleCI)
 * [Technologies](#technologies)
 * [Status](#status)
 * [Contact](#contact)
@@ -31,13 +32,13 @@ You can choose 3 different ways to run tests, depends if You want to run all or 
 `npm run test`
 * 2 - to start only tests for workflow (one module) open in main folder and use following command:
 `npm run basicWorkflow`
-* 3 - to start one scenerio test from 1 feature open terminal in main folder and use following command:
+* 3 - to start one Scenerio test from 1 Feature open terminal in main folder and use following command:
 `node ./node_modules/protractor/bin/protractor ./protractor.sequential.conf.js --baseUrl='https://daas.resolvertest.com/' --capabilities.chromeOptions.prefs.download.default_directory=`pwd`/tmp --specs=e2e/features/dashboard/1-log-in.feature:8`
 
-NOTICE: If You want to check diffrent scenerio, change `--specs=e2e/features/../..:..`.
-First You should pick module You want to check, e.g. `dashboard` or `complaint` or `workflow`, then write name of feature file, e.g `1-account-registration.feature` or `5-investigate-status.feature` and write line number which Scenerio is in file, e.g `14` or `8`. New path file to check diffrent scenerio can be `--specs=e2e/features/miscellaneous/1-account-registration.feature:14`.
+NOTICE: If You want to check diffrent Scenerio, change `--specs=e2e/features/../..:..`.
+First You should pick module You want to check, e.g. `dashboard` or `complaint` or `workflow`, then write name of feature file, e.g `1-account-registration.feature` or `5-investigate-status.feature` and write line number which Scenerio is in file, e.g `14` or `8`. New path file to check diffrent Scenerio can be `--specs=e2e/features/miscellaneous/1-account-registration.feature:14`.
 
-Look at this short film in gif format, which demonstare how to run only one scenerio:
+Look at this short film in gif format, which demonstare how to run only one Scenerio:
 ![film](/home/testarmy/projekty/daas-testing-master/film.readme/1-log-in.feature:8.gif)
 
 ## Features
@@ -70,7 +71,12 @@ List of features in our project:
   * 7-awaiting-resolution-status.feature
   * 8-log-outcome-status.feature
   
-Every feature file includes diffrent scenerio, which checks app's behavior.
+A feature file is made up of one or more Scenarios, and a Scenario is made up of the Given-When-Then steps. You can think of a Scenario as a test case and a Feature as a logical set of test cases.
+
+## CircleCI
+You can check very easily tests results in CircleCI. It allows You to see whether or not your Cucumber tests are passing or failing, also it helps You to see what error occured during failling Scenerio. Please look at those 2 films in gif format, which demonstare how to deal with tests results on CircleCI:
+![CircleCI](/home/testarmy/projekty/daas-testing-master/film.readme/CircleCI.gif)
+![CircleCI-failed](/home/testarmy/projekty/daas-testing-master/film.readme/CircleCI-failed.gif)
 
 ## Technologies
 * cucumber - version 5.1.0
