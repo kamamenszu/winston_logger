@@ -3,7 +3,7 @@
 
 ## Table of contents
 * [Installation](#installation)
-* [Executing tests](#executing tests on Linux and Chrome)
+* [Executing](#executing)
 * [Setup](#setup)
 * [Technologies](#technologies)
 * [Features](#features)
@@ -27,14 +27,17 @@ If Your default localhost apiUrl is diffrent You can change it at file:
 
 ## Executing tests on Linux and Chrome
 You can choose 3 different ways to run tests, depends if You want to run all or only particular scenario:
-* 1 - to start all tests execution open terminal in main folder and use following command
+* 1 - to start all tests execution open terminal in main folder and use following command:
 `npm run test`
-* 2 - to start only tests for workflow (one module) open in main folder and use following command
+* 2 - to start only tests for workflow (one module) open in main folder and use following command:
 `npm run basicWorkflow`
-* 3 - to start one scenerio test from 1 feature open terminal in main folder and use following command
+* 3 - to start one scenerio test from 1 feature open terminal in main folder and use following command:
 `node ./node_modules/protractor/bin/protractor ./protractor.sequential.conf.js --baseUrl='https://daas.resolvertest.com/' --capabilities.chromeOptions.prefs.download.default_directory=`pwd`/tmp --specs=e2e/features/dashboard/1-log-in.feature:8`
+
+If You want to check diffrent scenerio, change `--specs=e2e/features/../..:..`.
+You should pick module You want to check, e.g. `dashboard; complaint or workflow`, then write name of feature file, e.g `1-account-registration.feature or 5-investigate-status.feature` and write line number which Scenerio is in file, e.g `8` or `14`.
 Look at this short film in gif format, which demonstare how to run only one scenerio:
-![tekst alternatywny](/home/testarmy/projekty/daas-testing-master/film.readme)
+![film](/home/testarmy/projekty/daas-testing-master/film.readme)
 
 ## Technologies
 * cucumber - version 5.1.0
