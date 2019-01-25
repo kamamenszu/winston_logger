@@ -82,7 +82,9 @@ A feature file is made up of one or more Scenarios, and a Scenario is made up of
 
 ## CircleCI
 You can check very easily tests results in CircleCI. It allows You to see whether or not your Cucumber tests are passing or failing, also it helps You to see what error occured during failling Scenerio. Please look at those 2 films in gif format, which demonstare how to deal with tests results on CircleCI:
+
 ![CircleCI](/home/testarmy/projekty/daas-testing-master/film.readme/CircleCI.gif)
+
 ![CircleCI-failed](/home/testarmy/projekty/daas-testing-master/film.readme/CircleCI-failed.gif)
 
 ## Technologies
