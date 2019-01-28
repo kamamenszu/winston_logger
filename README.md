@@ -6,6 +6,7 @@ This project refers to Transport Focus app. It's uses bdd tests which are readab
 * [Executing](#executing)
 * [Setup](#setup)
 * [Features](#features)
+* [Scripts](#scripts)
 * [CircleCI](#circleCI)
 * [Technologies](#technologies)
 * [Status](#status)
@@ -195,34 +196,11 @@ Path to execute tests from this file:
 **Feature file:** 8-log-outcome-status.feature :
 * **Scenario:** Outcome message should be visible for user who create complaint. Status: complete || **Line:** `8`
 
-
-## Features
-List of features in our project:
-* 2 dashboard (module)
-  * 1-log-in.feature
-  * 2-filters.feature
-* 3 miscellaneous (module)
-  * 1-account-registration.feature
-* 4 permissions (module)
-  * complaint
-   * details-screen.feature
-* 4 scripts (module)
-  * create-multiply-complaints.feature
-* 5 submission-flow (module)
-  * 1-submission-flow.feature
-* 6 task-dashboard(module)
- * 1-task-dashboard.feature
-* 7 workflow (module)
-  * 1-upload-evidence-status.feature
-  * 2-acknowledge-appeal-status.feature
-  * 3-receive-information-status.feature
-  * 4-assign-case-status.feature
-  * 5-investigate-status.feature
-  * 6-excalate-to-toc.feature
-  * 7-awaiting-resolution-status.feature
-  * 8-log-outcome-status.feature
-  
 A feature file is made up of one or more Scenarios, and a Scenario is made up of the Given-When-Then steps. You can think of a Scenario as a test case and a Feature as a logical set of test cases.
+
+## Scripts
+If You want to create compliants, You should use on Your console following command: `npm run createsf`. 
+Then 10 compliants will be created.
 
 ## CircleCI
 You can check very easily tests results in CircleCI. It allows You to see whether or not your Cucumber tests are passing or failing, also it helps You to see what error occured during failling Scenerio. Please look at those 2 films in gif format, which demonstare how to deal with tests results on CircleCI:
