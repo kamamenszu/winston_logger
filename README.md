@@ -90,6 +90,110 @@ Path to execute tests from this file:
 * **Scenario:** User with <role> should be able to see only these cases which he filtered by <condition> || **Line:** `7`
 * **Scenario:** User with role <user> should be able to searching for by <condition> || **Line:** `18`
 * **Scenario:** User with role <user> should be able to filtered cases by <condition> || **Line:** `29` 
+ 
+### Miscellaneous
+Path to execute tests from this file: 
+```
+--specs=e2e/features/miscellaneous/1-account-registration.feature:<Line>
+```
+**Feature file:** 1-account-registration.feature :
+* **Scenario:** Sign up validation || **Line:** `4`
+* **Scenario:** Sign up and log in || **Line:** `14`
+
+### Permissions
+**Complaint**
+Path to execute tests from this file: 
+```
+--specs=e2e/features/permissions/complaint/details-screen.feature:<Line>
+```
+
+**Feature file:** details-screen.feature :
+* **Scenario:** As a <role> I should see the following headlines: <headlines> with sub-headings: <subHeadings> || **Line:** `8`
+ 
+### Scripts
+Path to execute tests from this file: 
+```
+--specs=e2e/features/scripts/create-multiply-complaints.feature:<Line>
+```
+**Feature file:** create-multiply-complaints.feature :
+* **Scenario:** Create x complaints || **Line:** `4`
+
+### Submission-flow
+Path to execute tests from this file: 
+```
+--specs=e2e/features/submission-flow/submission-flow.feature:<Line>
+```
+**Feature file:** submission-flow.feature :
+* **Scenario:** Customer should be able to create complaint || **Line:** `8`
+* **Scenario:** User with <role> should be able to complete SF and have access to created complaint || **Line:** `14`
+
+### Task-dashboard
+Path to execute tests from this file: 
+```
+--specs=e2e/features/task-dashboard/1-task-dashboard.feature:<Line>
+```
+**Feature file:** 1-task-dashboard.feature :
+* **Scenario:** Assign complaint to SPTA || **Line:** `8`
+* **Scenario:** User should see a column with specific headers || **Line:** `14`
+
+### Workflow
+Path to execute tests from this file: 
+```
+--specs=e2e/features/workflow/1-upload-evidence-status.feature:<Line>
+```
+**Feature file:** 1-upload-evidence-status.feature :
+* **Scenario:** The Next Action Box should present 'Upload Evidence' status || **Line:** `7`
+* **Scenario:** The Next Action Box should present 'Appeal is being reviewed' status || **Line:** `13`
+
+Path to execute tests from this file: 
+```
+--specs=e2e/features/workflow/2-acknowledge-appeal-status.feature:<Line>
+```
+**Feature file:** 2-acknowledge-appeal-status.feature :
+* **Scenario:** The Next Action Box should present 'Has the passenger provided all information?' status || **Line:** `8`
+* **Scenario:** The Next Action Box should present 'Assign Case' status after No more information is needed from passenger || **Line:** `14`
+
+Path to execute tests from this file: 
+```
+--specs=e2e/features/workflow/3-receive-information-status.feature:<Line>
+```
+**Feature file:** 3-receive-information-status.feature :
+* **Scenario:** The Next Action Box should present 'Assign Case' status || **Line:** `8`
+
+Path to execute tests from this file: 
+```
+--specs=e2e/features/workflow/4-assign-case-status.feature:<Line>
+```
+**Feature file:** 4-assign-case-status.feature :
+* **Scenario:** The Next Action Box should present 'Investigation' status || **Line:** `8`
+
+Path to execute tests from this file: 
+```
+--specs=e2e/features/workflow/5-investigate-status.feature:<Line>
+```
+**Feature file:** 5-investigate-status.feature :
+* **Scenario:** The Next Action Box should present 'Escalate to TOC' status || **Line:** `8`
+
+Path to execute tests from this file: 
+```
+--specs=e2e/features/workflow/6-excalate-to-toc.feature:<Line>
+```
+**Feature file:** 6-excalate-to-toc.feature :
+* **Scenario:** The Next Action Box should present 'Awaiting TOC response' status || **Line:** `8`
+
+Path to execute tests from this file: 
+```
+--specs=e2e/features/workflow/7-awaiting-resolution-status.feature:<Line>
+```
+**Feature file:** 7-awaiting-resolution-status.feature :
+* **Scenario:** The Next Action Box should present 'Awaiting resolution' status || **Line:** `8`
+
+Path to execute tests from this file: 
+```
+--specs=e2e/features/workflow/8-log-outcome-status.feature:<Line>
+```
+**Feature file:** 8-log-outcome-status.feature :
+* **Scenario:** Outcome message should be visible for user who create complaint. Status: complete || **Line:** `8`
 
 
 ## Features
