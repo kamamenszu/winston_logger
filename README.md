@@ -58,6 +58,7 @@ List of features in our project:
 
 ### Complaint
 **Evidence page**
+These tests describe how Passenger uploads evidence (e.g pdf, image) and checks if He see it on Evidence Page and has access to it.
 Path to execute tests from this file: 
 ```
 --specs=e2e/features/complaint/evidence/1-uploading-evidence.feature:<Line>
@@ -68,6 +69,7 @@ Path to execute tests from this file:
 * **Scenario:** User should be able to upload more then one evidence with various Evidence type || **Line:** `14`
 
 **Message page**
+These tests describe how Passenger sends message to Administrator and attachs documents. They check if Administrator sees the same message which Passenger sent to him.
 Path to execute tests from this file: 
 ```
 --specs=e2e/features/complaint/messages/1-sending-message.feature:<Line>
@@ -76,6 +78,7 @@ Path to execute tests from this file:
 * **Scenario:** Sending message with additional information || **Line:** `8`
 
 ### Dashboard
+These tests describe how user with diffrent role (e.g Administrator, Passenger, SWR, SPTA) signes in. They checks if user can see all column headers on dashboard after signing in.
 Path to execute tests from this file: 
 ```
 --specs=e2e/features/dashboard/1-log-in.feature:<Line>
@@ -83,6 +86,7 @@ Path to execute tests from this file:
 **Feature file:** 1-log-in.feature :
 * **Scenario:** Log in || **Line:** `8`
 
+These tests describe how user with diffrent role can filter cases. They check if user can see filtered compliants on dashboard.
 Path to execute tests from this file: 
 ```
 --specs=e2e/features/dashboard/2-filters.feature:<Line>
@@ -93,6 +97,7 @@ Path to execute tests from this file:
 * **Scenario:** User with role <user> should be able to filtered cases by <condition> || **Line:** `29` 
  
 ### Miscellaneous
+These tests describe how user register on app. They check if user got confirmation email and registered by unique details and used appropriate password. 
 Path to execute tests from this file: 
 ```
 --specs=e2e/features/miscellaneous/1-account-registration.feature:<Line>
@@ -103,23 +108,16 @@ Path to execute tests from this file:
 
 ### Permissions
 **Complaint**
+These tests check if user with a specific role see appropriate headlines. 
 Path to execute tests from this file: 
 ```
 --specs=e2e/features/permissions/complaint/details-screen.feature:<Line>
 ```
-
 **Feature file:** details-screen.feature :
 * **Scenario:** As a <role> I should see the following headlines: <headlines> with sub-headings: <subHeadings> || **Line:** `8`
- 
-### Scripts
-Path to execute tests from this file: 
-```
---specs=e2e/features/scripts/create-multiply-complaints.feature:<Line>
-```
-**Feature file:** create-multiply-complaints.feature :
-* **Scenario:** Create x complaints || **Line:** `4`
 
 ### Submission-flow
+These tests check if customer got information about his compaint and user with diffrent role is able to see newly created compaints by customer.
 Path to execute tests from this file: 
 ```
 --specs=e2e/features/submission-flow/submission-flow.feature:<Line>
@@ -129,6 +127,7 @@ Path to execute tests from this file:
 * **Scenario:** User with <role> should be able to complete SF and have access to created complaint || **Line:** `14`
 
 ### Task-dashboard
+These tests describe how administrator assigns case to SPTA. They check if assigned case is visible to SPTA, and tests check if administrator and SPTA see the approporiate column headers.
 Path to execute tests from this file: 
 ```
 --specs=e2e/features/task-dashboard/1-task-dashboard.feature:<Line>
@@ -138,6 +137,7 @@ Path to execute tests from this file:
 * **Scenario:** User should see a column with specific headers || **Line:** `14`
 
 ### Workflow
+These tests check if status of complaint is appropriate after Passenger upload evidence or missed to this.
 Path to execute tests from this file: 
 ```
 --specs=e2e/features/workflow/1-upload-evidence-status.feature:<Line>
@@ -146,6 +146,7 @@ Path to execute tests from this file:
 * **Scenario:** The Next Action Box should present 'Upload Evidence' status || **Line:** `7`
 * **Scenario:** The Next Action Box should present 'Appeal is being reviewed' status || **Line:** `13`
 
+These tests check if passenger provided all required information while filling the compliant. They check if administrator see  suitable status of complaint if information were provided or missed.
 Path to execute tests from this file: 
 ```
 --specs=e2e/features/workflow/2-acknowledge-appeal-status.feature:<Line>
@@ -154,6 +155,7 @@ Path to execute tests from this file:
 * **Scenario:** The Next Action Box should present 'Has the passenger provided all information?' status || **Line:** `8`
 * **Scenario:** The Next Action Box should present 'Assign Case' status after No more information is needed from passenger || **Line:** `14`
 
+These tests check if complaint has suitable status after administrator proceed case with information receive.
 Path to execute tests from this file: 
 ```
 --specs=e2e/features/workflow/3-receive-information-status.feature:<Line>
@@ -161,6 +163,7 @@ Path to execute tests from this file:
 **Feature file:** 3-receive-information-status.feature :
 * **Scenario:** The Next Action Box should present 'Assign Case' status || **Line:** `8`
 
+These tests check if complaint has suitable status after administrator assign case to SPTA.
 Path to execute tests from this file: 
 ```
 --specs=e2e/features/workflow/4-assign-case-status.feature:<Line>
@@ -168,6 +171,7 @@ Path to execute tests from this file:
 **Feature file:** 4-assign-case-status.feature :
 * **Scenario:** The Next Action Box should present 'Investigation' status || **Line:** `8`
 
+These tests check if complaint has suitable status after SPTA completes investigation.
 Path to execute tests from this file: 
 ```
 --specs=e2e/features/workflow/5-investigate-status.feature:<Line>
@@ -175,6 +179,7 @@ Path to execute tests from this file:
 **Feature file:** 5-investigate-status.feature :
 * **Scenario:** The Next Action Box should present 'Escalate to TOC' status || **Line:** `8`
 
+These tests check if complaint has suitable status after SPTA ecsaltes case to TOC.
 Path to execute tests from this file: 
 ```
 --specs=e2e/features/workflow/6-excalate-to-toc.feature:<Line>
@@ -182,6 +187,7 @@ Path to execute tests from this file:
 **Feature file:** 6-excalate-to-toc.feature :
 * **Scenario:** The Next Action Box should present 'Awaiting TOC response' status || **Line:** `8`
 
+These tests check if complaint has suitable status after TOC sent response.
 Path to execute tests from this file: 
 ```
 --specs=e2e/features/workflow/7-awaiting-resolution-status.feature:<Line>
@@ -189,6 +195,7 @@ Path to execute tests from this file:
 **Feature file:** 7-awaiting-resolution-status.feature :
 * **Scenario:** The Next Action Box should present 'Awaiting resolution' status || **Line:** `8`
 
+These tests check if complaint has outcome message after SPTA created complaint which has got status complete.
 Path to execute tests from this file: 
 ```
 --specs=e2e/features/workflow/8-log-outcome-status.feature:<Line>
