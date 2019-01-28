@@ -58,7 +58,7 @@ List of features in our project:
 
 ### Complaint
 **Evidence page**
-## These tests describe how Passenger uploads evidence (e.g pdf, image) and checks if He see it on Evidence Page and has access to it.
+##### These tests describe how Passenger uploads evidence (e.g pdf, image) and checks if He see it on Evidence Page and has access to it.
 Path to execute tests from this file: 
 ```
 --specs=e2e/features/complaint/evidence/1-uploading-evidence.feature:<Line>
@@ -69,7 +69,7 @@ Path to execute tests from this file:
 * **Scenario:** User should be able to upload more then one evidence with various Evidence type || **Line:** `14`
 
 **Message page**
-## These tests describe how Passenger sends message to Administrator and attachs documents. They check if Administrator sees the same message which Passenger sent to him.
+##### These tests describe how Passenger sends message to Administrator and attachs documents. They check if Administrator sees the same message which Passenger sent to him.
 Path to execute tests from this file: 
 ```
 --specs=e2e/features/complaint/messages/1-sending-message.feature:<Line>
