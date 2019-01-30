@@ -1,5 +1,6 @@
 <details>
-<summary>Complaint</summary>    
+<summary>Complaint</summary>
+ 
 + Evidence page
 
 Path to execute tests: 
@@ -44,7 +45,8 @@ Path to execute tests from this file:
  These tests describe how user with different role can search and filter cases. It check if user can see filtered/searched cases on the Dashboard
 </details>
 
-### Miscellaneous
+<details>
+<summary>Miscellaneous</summary>
 
 Path to execute tests from this file: 
 ```
@@ -53,8 +55,11 @@ Path to execute tests from this file:
 **Feature file:** 1-account-registration.feature :
 * **Scenario:** Sign up validation || **Line:** `4`\
 We check if the validation is working properly (e.g. checking validation info)
+</details>
 
-### Permissions
+<details>
+ <summary>Permissions</summary>
+  
 **Complaint**
 
 Path to execute tests from this file: 
@@ -64,8 +69,10 @@ Path to execute tests from this file:
 **Feature file:** details-screen.feature :
 * **Scenario:** As a <role> I should see the following headlines: <headlines> with sub-headings: <subHeadings> || **Line:** `8`\
  We check here if is it all OK with permissions to the Details screen. Which information see (and should see) each user with specific role. 
+ </details>
  
-### Submission-flow
+<details>
+ <summary>Submission-flow</summary>
 
 Path to execute tests from this file: 
 ```
@@ -75,8 +82,10 @@ Path to execute tests from this file:
 * **Scenario:** Customer should be able to create complaint || **Line:** `8`
 * **Scenario:** User with <role> should be able to complete SF and have access to created complaint || **Line:** `14`\
  We check here if the Submission Flow is working properly for each role.
+</details>
 
-### Task-dashboard
+<details>
+ <summary>Task-dashboard</summary>
 
 Path to execute tests from this file: 
 ```
@@ -87,8 +96,11 @@ Path to execute tests from this file:
 We check if the Administrator can assign cases to SPTA and then whether SPTA can see these assigned cases on his Tasks List. 
 * **Scenario:** User should see a column with specific headers || **Line:** `14`\
 This test check if each user role (administrator and SPTA) can see only these column headers which he should see
+</details>
 
-### Workflow\
+<details>
+ <summary>Workflow</summary>
+ 
 In these tests, we check whether the entire workflow works well. Is each case status is reachable and guidance are displayed correctly 
 Path to execute tests from this file: 
 ```
@@ -147,5 +159,6 @@ Path to execute tests from this file:
 ```
 **Feature file:** 8-log-outcome-status.feature :
 * **Scenario:** Outcome message should be visible for user who create complaint. Status: complete || **Line:** `8`
+</details>
 
 A feature file is made up of one or more Scenarios, and a Scenario is made up of the Given-When-Then steps. You can think of a Scenario as a test case and a Feature as a logical set of test cases.
