@@ -1,7 +1,6 @@
 <details>
-<summary>Complaint</summary>
- 
-+ Evidence page
+<summary>Complaint</summary>\
+## Evidence page
 
 Path to execute tests: 
 ```
