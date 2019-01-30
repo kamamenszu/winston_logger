@@ -31,6 +31,16 @@ NOTICE: Please look at this movie, which demonstrate how to change base and API 
 
 ![localhost](/film.readme/localhost.gif)
 
+<details>
+<summary>Heading</summary>
+
++ markdown list 1
+    + nested list 1
+    + nested list 2
++ markdown list 2
+
+</details>
+
 ## Executing
 You can choose 3 different ways to run tests, depends on what you would like to run - all or only particular scenario. Open terminal in main folder and use following command:
 * 1 - to start all tests:
