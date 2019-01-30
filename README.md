@@ -95,7 +95,7 @@ This test check if each user role (administrator and SPTA) can see only these co
 <details>
  <summary>Workflow</summary>
  
-In these tests, we check whether the entire workflow works well. Is each case status is reachable and guidance are displayed correctly.\
+In these tests, we check whether the entire workflow works well. Is each case status is reachable and guidance are displayed correctly.
 
 Path to execute tests from this file: 
 ```
