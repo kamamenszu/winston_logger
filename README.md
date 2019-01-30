@@ -1,7 +1,7 @@
 <details>
-<summary>Complaint</summary>
+<summary>###Complaint</summary>
     
-+ Evidence page
++ ##Evidence page
 
 Path to execute tests: 
 ```
@@ -13,7 +13,7 @@ We check if user is able to upload an evidence to a complaint
 * **Scenario:** User should be able to upload more then one evidence with various Evidence type || **Line:** `14`\
 We check if user is able to upload more then one evidence. In this test we upload one evidence per one type.
 
-+ Message page
++ ##Message page
 
 Path to execute tests: 
 ```
