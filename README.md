@@ -1,18 +1,7 @@
-
 <details>
-<summary>Heading</summary>
-
-+ markdown list 1
-    + nested list 1
-    + nested list 2
-+ markdown list 2
-
-</details>
-
-
-
-### Complaint
-##### Evidence page
+<summary>Complaint</summary>
+    
++ Evidence page
 
 Path to execute tests: 
 ```
@@ -24,7 +13,7 @@ We check if user is able to upload an evidence to a complaint
 * **Scenario:** User should be able to upload more then one evidence with various Evidence type || **Line:** `14`\
 We check if user is able to upload more then one evidence. In this test we upload one evidence per one type.
 
-##### Message page
++ Message page
 
 Path to execute tests: 
 ```
@@ -32,6 +21,8 @@ Path to execute tests:
 ```
 * **Scenario:** Sending message with additional information || **Line:** `8`\
 Passenger sends message to Administrator and attaches documents, then check if Administrator sees the same message title, body and attachment which Passenger sent to him.
+
+</details>
 
 ### Dashboard
 
