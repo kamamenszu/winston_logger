@@ -1,61 +1,3 @@
-# Automation test for Transport Focus (TF) portal
-This project refers to Transport Focus app. It's uses bdd tests which are readable and common understood by every team member.
-
-## Table of contents
-* [Installation](#installation)
-* [Executing](#executing)
-* [Setup](#setup)
-* [Test cases](#test-cases)
-* [Scripts](#scripts)
-* [CircleCI](#circleci)
-* [Technologies](#technologies)
-* [Status](#status)
-* [Contact](#contact)
-
-## Installation
-Make sure you have installed latest Node JS and Chrome browser. Once you clone repository, execute the following command to download all required dependencies
-`npm install`
-Then 
-`npm start`
-
-## Setup
-Once the dependencies are installed, then you will be able to run the tests on staging. We use two variables to set up the API address and site address. Those two are:
-* baseUrl `https://daas.resolvertest.com/`
-* apiUrl `https://api-daas.resolvertest.com/`
-
-If you would like to change addresses to your localhost use these two commands on console:
-* `export $baseUrl="https://localhost:8080/"`
-* `export $apiUrl="https://localhost:3000/"`
-
-NOTICE: Please look at this movie, which demonstrate how to change base and API URLs directly from console:
-
-![Localhost](/film.readme/localhost.gif)
-
-## Executing
-You can choose 3 different ways to run tests, depends on what you would like to run - all or only particular scenario. Open terminal in main folder and use following command:
-* 1 - to start all tests:
-```
-npm run test
-```
-* 2 - to start tests only for workflow:
-```
-npm run basicWorkflow
-```
-* 3 - to start one test scenario:
-``
-node ./node_modules/protractor/bin/protractor ./protractor.sequential.conf.js  --capabilities.chromeOptions.prefs.download.default_directory=`pwd`/tmp --specs=e2e/features/dashboard/1-log-in.feature:8
-``
-
-NOTICE: If you would like to check different scenario, change `--specs=e2e/features/../..:..`.
-First you should pick module you want to check, e.g. `dashboard` or `complaint` or `workflow`, then write name of feature file, e.g `1-account-registration.feature` or `5-investigate-status.feature` and write line number which Scenario is in file, e.g `14` or `8`. New path file to check different Scenario can be `--specs=e2e/features/miscellaneous/1-account-registration.feature:14`.
-
-Look at this short film in GIF format, which demonstrate how to run only one scenario:
-
-![Run_particular_Scenerio](/film.readme/1-log-in.feature:8.gif)
-
-## Test cases
-List of test cases in our project:
-
 ### Complaint
 ##### Evidence page
 
@@ -64,8 +6,8 @@ Path to execute tests:
 --specs=e2e/features/complaint/evidence/1-uploading-evidence.feature:<Line>
 ```
 
-* **Scenario:** User should be able to upload an evidence || **Line:** `8`
-  We check if user is able to upload an evidence to a complaint
+* **Scenario:** User should be able to upload an evidence || **Line:** `8`\
+We check if user is able to upload an evidence to a complaint
 * **Scenario:** User should be able to upload more then one evidence with various Evidence type || **Line:** `14`
 
 *** We check if user is able to upload more then one evidence. In this test we upload one evidence per one type.
