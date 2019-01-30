@@ -5,7 +5,7 @@
 
 Path to execute tests: 
 ```
-specs=e2e/features/complaint/evidence/1-uploading-evidence.feature:<strong>Line</strong>
+--specs=e2e/features/complaint/evidence/1-uploading-evidence.feature:<Line>
 ```
 
 * **Scenario:** User should be able to upload an evidence || **Line:** `8`\
