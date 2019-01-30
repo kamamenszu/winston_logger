@@ -161,5 +161,4 @@ Path to execute tests from this file:
 * **Scenario:** Outcome message should be visible for user who create complaint. Status: complete || **Line:** `8`
 </details>  
 
-
-A feature file is made up of one or more Scenarios, and a Scenario is made up of the Given-When-Then steps. You can think of a Scenario as a test case and a Feature as a logical set of test cases.
+<br/> A feature file is made up of one or more Scenarios, and a Scenario is made up of the Given-When-Then steps. You can think of a Scenario as a test case and a Feature as a logical set of test cases.
